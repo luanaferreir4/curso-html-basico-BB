@@ -1,0 +1,283 @@
+Explicação dos conceitos aprendidos no curso:
+
+Protocolos: 
+Conjunto de regras para a comunicação em rede. Determinam como computadores se comunicam: como iniciar, como manter e como encerrar a comunicação.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+- HTTP (Hyper Text Transfer Protocol): Protocolo usado pelos servidores web para transmitir documentos HTML pela internet.
+- FTP (File Transfer Protocol): Protocolo muito utilizado pra transmitir arquivos mas sua interface gráfica não é tão agradável como HTTP. /*Próximo ao HTTP*/
+- TCP (Transfer Control Protocol): Conjunto de protocolos para a transmissão de informação de informação pela web, com função de verificar se os dados são 
+transferidos de forma correta, na sequência apropriada e sem erros.  /*Busca a tranferência de arquivos de maneira eficiente e correta*/
+- IP (Internet Protocol): Protocolo de endereçamento, que fornece o endereço dos computadores na rede.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+URL (Universal Resource Locator):
+É um sistema de endereçamento utilizado pelos navegadores para localizar redes, computadores e arquivos na internet.
+
+- Um exemplo de URL:
+http://www.ev.org.br/Paginas/Home.aspx
+  |         |          |        |
+HTTP     Endereço  Subárea  Nome do arquivo
+
+- HTTP: Protocolo a ser usado pra acessar o arquivo.
+- Endereço: Endereço do servidor.
+- Subárea: Área do servidor onde se encontra o arquivo.
+- Nome do arquivo: Nome do arquivo do servidor.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+A codificação de caracteres UTF-8 é a recomendação atual para codificação na web por ser amplamente suportada em navegadores e editores de código, além de ser 
+compatível com praticamente todos idiomas do mundo. Essa codificação utiliza um número variável de bytes para representar símbolos, podendo usar de 1 a 4 bytes.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<br> ou <break> - quebra de linha. /*Sem tag de fechamento.*/
+<p> - quebra de linha e pula uma linha pra começar a próxima. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<font face = "verdana"> - tipo de fonte. 
+<font color = "fuchsia"> - cor da fonte.
+<font size = "3"> - tamanho da fonte.
+<p align = "justify"> - alinhamento de texto, contendo: right, left, center, justify.
+<u> - sublinhado.
+<i> - itálico.
+<b> - negrito.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Adicionar subtítulos:
+
+<h1><b>1 - Introdução á Liguagem de Marcação HTML</b></h1>
+<p>Um apanhado de informações pra criar suas páginas <i>web<i>.<b>
+<hr>
+<h3><b>1.1 - Breve histórico</b></h3>
+<p>Tudo começou em...<b>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Textos preformatados:
+
+HTML texto preformatado (<pre>) é a tag utilizada para representar texto pré-formatado. Um texto dentro desse elemento é tipicamente exibido em uma fonte não 
+proporcional da mesma maneira em que o texto original foi disposto no arquivo. Espaços em branco são mantidos no texto da mesma forma em que este foi digitado.  
+
+<pre>
+Canção do exílio
+
+        Minha terra tem palmeiras,
+        Onde canta o Sabiá;
+        As aves, que aqui gorjeiam,
+        Não gorjeiam como lá.
+        
+        Nosso céu tem mais estrelas,
+        Nossas várzeas têm mais flores,
+        Nossos bosques têm mais vida,
+        Nossa vida mais amores.
+        
+        Em  cismar, sozinho, à noite,
+        Mais prazer eu encontro lá;
+        Minha terra tem palmeiras,
+        Onde canta o Sabiá.
+        
+        Minha terra tem primores,
+        Que tais não encontro eu cá;
+        Em cismar –sozinho, à noite–
+        Mais prazer eu encontro lá;
+        Minha terra tem palmeiras,
+        Onde canta o Sabiá.
+        
+        Não permita Deus que eu morra,
+        Sem que eu volte para lá;
+        Sem que disfrute os primores
+        Que não encontro por cá;
+        Sem qu'inda aviste as palmeiras,
+        Onde canta o Sabiá. 
+         
+        
+        De Primeiros cantos (1847)
+         
+        Gonçalves Dias</pre> 
+</pre>
+
+O (<pre>) nos dá a possibilidade de não precisar colocar quebras de linhas, ele respeita automaticamente a forma em que foi escrito.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Criando listas:
+Listas auxiliam a organizar os assuntos exibidos na página web. Os tópicos a serem abordados são:
+- Tipos e funções das listas.
+- Como criar listas.
+- Como intercalar tipos diferentes de listas.
+
+Tipos e funções das listas:
+Dois tipos principais de listas:
+- Enumeradas (ordenadas); <ol> 
+- Não enumeradas (não ordenadas); <ul>
+- <p> abre cada item da lista.
+
+Listas Intercaladas: combinações de listas em páginas web:
+
+   <h3>Lista de clientes:</h3>
+    <ol>
+      <li><p><b>Maria Peixoto Siqueira</b></p></li>
+      <ul>
+      <li>Data de Nascimento: <u>26.01.1977</u></li>
+      <li>CPF: 501.550.221-00</li>                                <!--Lista Intercalada-->
+      </ul>
+      <li><p><b>Caroline Pádua Alejandro.</b></p></li>
+      <ul>
+          <li>Data de Nascimento: <u>01.01.2002</u></li>
+          <li>CPF: 420.511.210-00</li>
+      </ul>
+    </ol>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Listas Personalizadas:
+
+- listas ordenadas (ol):
+<ol type="A"></ol> - Para exibir letras maiúsculas.
+<ol type="a"></ol> - Para exibir letras minúsculas.
+<ol type="I"></ol> - Para exibir números romanos com letras maiúculas.
+<ol type="i"></ol> - Para exibir números romanos com letras minúsculas.
+
+- listas desordenadas (ul):
+<ul type="disc"></ul> - círculo preto.
+<ul type="circle"></ul> - círculo branco.
+<ul type="square"></ul> - quadrado preto.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Inserindo imagens:
+
+Formatos de imagens mais utilizados em páginas web:
+- JPEG ou JPG: Suporta milhões de cores, não suporta fundos transparentes.
+- GIF: Suporta 256 cores e fundos transparentes.
+- PNG: Suporta milhões de cores e fundos transparentes.
+
+<img src="logo.png"> : onde a imagem se encontra.
+------------------
+Usando o atributo ALIGN:
+
+<img src="logo.png" align="top"> - [top(alinhar acima),bottom(alinhar abaixo),middle(alinhar ao meio),left(alinhar á esquerda),right(alinhar á direita)]
+------------------
+Usando o atributo ALT:
+- Vincula texto explicativo quando imagens não carregarem em alguns navegadores, ferramenta de acessibilidade pra deficientes visuais.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Criando links:
+Como interligar páginas utilizando links?
+
+O que são links?
+- Links são conexões pelas quais você conecta páginas que podem ser do mesmo website, externas ou ainda conectar páginas a outros documentos.
+- Os links podem ser criados no texto e também em outros elementos do website, como imagens ou itens de menu.
+
+---------------------------
+Usando a tag ANCHOR:
+É utilizada para criar links no hipertexto.
+
+- Sintaxe:
+<a href="URL">Texto descritivo.</a>
+    |     |           
+Atributo Endereço
+
+href: Atributo usado pra especificar a URL do documento linkado ou interligado.
+URL: Endereço da página ou documento a ser linkado.
+
+- Para links de entre em contato a partir do email:
+
+<a href="mailto:luanaferreiraservices@gmail.com">Entre em contato conosco</a>
+------------------------
+Criando links para seções na mesma página:
+
+- A tag ANCHOR também é utilizada para criar links de seção.
+
+Você especifica a URL do documento que deseja interligar, com o nome da seção precedido pelo símbolo #.
+No entanto, será preciso utilizar um atributo que fará o navegador entender para onde deve ir após o usuário clicar no link criado.
+Este atributo é o NAME. O navegador exibe o link e, quando selecionado, exibirá a seção que começa com nome especificado.
+
+Observe abaixo como os atributos formam a sintaxe da tag <a> neste caso:
+<a href="#nome da seção">Texto explicativo</a> 
+<a name="nome da seção"> - Próximo a seção.
+-------------------------
+Criando links em imagens:
+
+<a href="URL"><img src="logo.png"></a>
+------------------------
+Personalizando links:
+
+<body link="gray" alink="red" vlink="#cc0000">
+alink: especifica cor do mouse quando o usuário passa o mouse por cima.
+link: especifica cor dos links não acessados da página web.
+vlink: especifica cor dos links acessados da página web.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Combinando tags:
+
+Combinação de <li> com <a>:
+
+<html>
+	<head>
+	<title>Tag ANCHOR e as tags de formatação</title>
+	</head>
+
+<body>
+	<p><font face="Calibri" size="5">Combinando a <i>tag</i> ANCHOR com as <i>tags</i> de formatação.</p>
+	<ol>
+		<li><a href="#Exerc1"><font color="green">Reveja o exercício 1</a></font><br>
+		<li><a href="#Exerc2"><font color="red">Reveja o exercício 2</a></font><br>
+		<li><a href="#Exerc3"><font color="purple">Reveja o exercício 3</a></font><br>
+	</ol>
+
+	<a name="Exerc1">
+		<h2>Exercício 1</h2>
+	</a>
+	<a name="Exerc2">
+		<h2>Exercício 2</h2>
+	</a>
+	<a name="Exerc3">
+		<h2>Exercício 3</h2>
+	</a>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Usando imagens mapeadas:
+
+- O que são imagens mapeadas?
+
+Uma imagem mapeada é uma imagem dividida em diferentes áreas e cada área é interligada a um documento. Uma imagem mapeada é diferente de um link numa imagem.
+
+No caso da iamgem mapeada, o navegador, primeiramente, identifica a área da imagem que você selecionou e então a URL do documento vinculado a esta área.
+
+O exemplo mais comum de uso é quando existe a necessidade de uma mesma imagem direcionar o usuário para duas ou mais páginas web diferentes, como num menu. Neste 
+caso, delimitam-se áreas da imagem que remetem a um lugar e outras áreas para outras páginas ou documentos.
+
+- Tipos de imagens mapeadas
+
+- No servidor(server-side): Na imagem mapeada server-side você define um arquivo especial chamado arquivo de definição das coordenadas com todos os detalhes da 
+imagem mapeada e armazena este arquivo no servidor.
+Quando você seleciona uma área da imagem mapeada, o navegador acessa o arquivo de definição das coordenadas no servidor para identificar a URL do documento 
+interligado.
+
+- No navegador(client-side): Na imagem mapeada client-side, você inclui todos os detalhes da imagem mapeada no próprio documento. Este será o tipo de imagem mapeada
+que veremos neste curso.
+
+Como mapear uma imagem
+
+Para utilizar uma imagem mapeada, primeiro você precisa definir as áreas da imagem que possuirão links para outras páginas ou documentos e, posteriormente, colocar a 
+referida imagem no site.
+Para realizar este procedimento,  você pode definir as áreas utilizando formas geométricas como quadrados, retângulos, círculos ou qualquer outro polígono.
+
+Para delinear as formas geométricas na imagem, são utilizadas coordenadas X e Y, que são contadas pixel a pixel, tendo como 0(zero) o ponto esquerdo superior da imagem.
+
+Para cada tipo de forma, a inserção de coordenadas possui uma sintaxe única.
+- Retângulo - coords="x1,y1,x2,y2" (X1 e Y1 são o vértice esquerdo superior e X2 e Y2 são o vértice direito inferior)
+- Círculo - coords="x.y.r" (X,Y são o centro do círculo e R é a medida do raio, em pixels)
+- Polígono - coords="x1,y1,x2,y2,x3,y3,..." (Todos os vértices do polígono)
+
+Mapeando uma imagem
+
+É muito importante lembrar que atualmente, quase nenhuma pessoa realiza a operação de descobrimento dos pontos de coordenadas manualmente. Praticamente todos os programas 
+editores de HTML possuem um mapeador de imagens incluso, no qual você desenha as formas geométricas e o programa fornece o código pronto.
+
+É um processo demorado e trabalhoso realizar tudo manualmente. Entretanto, é de extrema importância que se conheçam os conceitos de como o código é construído. 
+
+- Sintaxe abaixo:
+<img src="menu.gif" alt="Menu" usemap="#menu">
+                                  |
+                       Atributo demonstrado que será utilizado 
+                       um mapa na imagem e qual o nome do mapa
+                       utilizado (pode-se ter mais de um mapa 
+                       para mais de uma imagem possuindo ma-
+                       peamento).
+------------------------------
+A tag MAP:
+Agora, observe como fica o código da tag <map>,como resultado temos a imagem mapeada, com cada área colorida representando um link com uma página externa.
+
+            <area      shape="forma" coords="x,y,x,y" href="http://www.fb.org.br" alt="Item 1">
+               |          |                                                 
+           Delimita    rect = retângulo, circle para círculos, polygon para polígonos. 
+           a área da 
+           imagem que
+           deve conter
+           link.
