@@ -1,9 +1,9 @@
 # curso-html-basico-BB
 
 Curso feito em 03/2022 para o armazenamento/aprendizado do conteúdo.
-Conteúdo aprendido no curso:
+Conteúdo aprendido no curso:<br>
 
-Módulo 1 – Introdução
+<li>Módulo 1 – Introdução</li>
 Módulo 2 – HTML e a Web
 Módulo 3 – Criando um documento HTML
 Módulo 4 – Formatando um documento HTML
